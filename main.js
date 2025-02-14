@@ -37,4 +37,9 @@ btnYes.addEventListener("click", (e) => {
   btnNo.classList.add("hide");
   imageOne.classList.add("hide");
   imageTwo.classList.remove("hide");
+
+  // Wait for 3 seconds before loading the next page
+  setTimeout(() => {
+    window.location.href = "poem.html";
+  }, 3000); // 5000 milliseconds = 3 seconds
 });
